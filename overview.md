@@ -6,7 +6,7 @@ Getting my bearings on the landscape.
 
 Distinguishing easily conflatable terms.
 
-TLDR
+**TLDR**
 
 > **AI** is the broader field of creating intelligent machines. **ML** is a subset of AI that focuses on learning from data, and **DL** is a subset of ML that uses neural networks for complex pattern recognition. 
 
@@ -61,6 +61,19 @@ Concepts
 - exploratory data analysis
 
 ### Software development
-- TensorFlow, PyTorch, scikit-learn
-- ^ are these still the key tools?
+- **PyTorch**
+  - ML lib based on Torch framework. Originally from FB, now OSS. 
+  - Used for DL models
+  - Main features: tensor computation w/ GPU support, deep dynamic neural networks
+  - high perf replacement for NumPy
+  - easily integrated w/ other Python libs (NumPy, SciPy, pandas)
+
+- **JAX**
+  - GPU accelerated version of Numpy w/ powerful function transformations
+  - very fast
+  - steeper learning curve
+  - primarily for research tasks
+  - lower-level, but can use more abstracted libs such as Flax, Haiku, Equinox, PIX
+  - originally from Google Deepmind
+
 
