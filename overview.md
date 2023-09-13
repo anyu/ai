@@ -25,35 +25,61 @@ Distinguishing easily conflatable terms.
   - DL algorithms aka. artificial neural networks: Muliple layers of interconnected nodes that process and transform data.
 - **Generative AI**: Powered by large ML models that are pre-trained on raw data (often referred to as 'foundational models (FM')) and learn to generate statisfically probably outputs. A subset of FMs are LLMs.
 - **LLMs**: Large Language Models.
-  - Models trained on trillions of words across many natural language tasks. 
+  - Models trained on trillions of words across many natural language tasks.
+  - A language model itself produces a probability distribution over some vocabulary
   - Not all generative AI tools are built on LLMs, but all LLMs are a form of generative AI.
 
 ## Areas to understand
 
 ### Foundational machine learning
 
-Models
-- linear regression
-- logistic regression
-- neural networks
-- decision trees
-- clustering
-- anomaly detection
+An **algorithm** is the set of instructions and techniques used to train an ML system, while a model is the outcome of applying an algorithm to data, representing the system's learned knowledge. 
 
-Concepts
-- why and how ML works
-- bias/variance
-- cost functions
-- regularization
-- optimization algorithms
-- error analysis
+Algorithms are like the recipes, and models are the dishes created using those recipes.
+
+#### Examples of algorithms
+- **gradient descent**: an optimization algorithm used to minimize a loss function. Works by iteratively adjusting model parameters to find the min value of the loss function.
+- **decision trees**: a type of supervised learning algorithm used for both classification and regression tasks. Make decisions by recursively splitting the data into subsets based on the values of input features, eventually reaching a decision at the tree's leaves.
+- **clustering**: an unsupervised learning technique used to group similar data based on characteristics. eg. common algorithms = `K-means`, hierarchical clustering
+- **anomaly detection**: technique used to identify unusual patterns
+
+#### Examples of models
+- **linear regression**: a type of supervised learning algorithm used for predicting a continuous output (numeric value), based on 1+ input features. Assumes a linear relationship between input features and output. Tries to fit a straight line to data.
+- **logistic regression**: a type of supervised learning algorithm, used for binary classification tasks. Models probability of an input belonging to one of the classes using the logistic function.
+- **neural networks**: a class of ML learning models consting of interconnected nodes organized in layers (input layer, hidden layers, output layer)
+
+### Process
+
+1. Data Collection: Gather relevant data.
+2. Data Preprocessing: Clean and prepare data.
+3. Feature Selection/Engineering: Choose or create informative features.
+4. Model Selection: Pick an appropriate ML algorithm.
+5. Training: Adjust model parameters to minimize errors.
+6. Validation: Check model performance on validation data.
+7. Testing: Assess model performance on unseen data.
+8. Deployment: Use the model to make real-time predictions or decisions.
+
+- **bias**: Error introduced by overly simplistic assumptions in an ML model. Underfitting and overfitting.
+- **variance**: Error introduced by a model that is too complex and sensitive to small fluctuations in the training data. 
+- **cost functions (aka loss functions)**: measure the error between a model's predictions and the actual target values in the training data. The goal of training is to minimize this cost function.
+- **regularization**: a technique used to prevent overfitting in machine learning models. It adds a penalty term to the cost function, discouraging the model from learning overly complex patterns in the training data
+  - eg. L1 regularization (lasso), L2 regularization (ridge)
+- **optimization algorithms**:  used to adjust a model's parameters iteratively during training to minimize the cost function.
 
 ### Deep learning
 - basics of neural networks
 - practical skills for making them work (eg. hyperparameter tuning)
-- convolution networks
-- sequence models
-- transformers
+- convolutional neural networks (CNNs)
+- recurrent neural networks (RNNs)
+- sequence models, attention models 
+- transformers: Introduced by 2017 Attention is All You Need paper, replaced RNN and CNNs
+- backpropagation: a variant of gradient descent. The most common training algorithm for neural networks. It makes gradient descent feasible for multi-layer neural networks.
+- hyperparameter tuning
+- gated recurrent unit (GRU)
+- long short term memory (LSTM)
+- **embeddings**: A low-dimensional space into which you can translate high-dimensional vectors. Embeddings make it easier to do aML on large inputs like sparse vectors representing words. Ideally, an embedding captures some of the semantics of the input by placing semantically similar inputs close together in the embedding space.
+- collaborative filtering?
+- hidden layers
 
 ### Relevant math concepts
 - linear algebra (vectors, matrices, manipulating them)
@@ -75,5 +101,7 @@ Concepts
   - primarily for research tasks
   - lower-level, but can use more abstracted libs such as Flax, Haiku, Equinox, PIX
   - originally from Google Deepmind
+
+- vector DB
 
 
