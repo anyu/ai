@@ -17,9 +17,9 @@ Distinguishing easily conflatable terms.
     - Artificial super intelligence (ASI) - strong/general AI
 
 - **Machine learning**: A subset of AI, focusing on algorithms and models that allow machine to learn from data without being explicitly programmed.
-  - supervised learning
-  - unsupervised learning
-  - reinforcement learning
+  - supervised learning - requires a labeled dataset for training
+  - unsupervised learning - identifies hidden patterns from an unlabeled dataset
+  - reinforcement learning - reacts to an environment on their own
 - **Deep learning**: A subfield/technique of ML, inspired by the structure and function of the human brain's neural networks.
   - DL is a more advanced and specialized form of ML that requires substantial computational resources.
   - DL algorithms aka. artificial neural networks: Muliple layers of interconnected nodes that process and transform data.
@@ -46,7 +46,10 @@ Algorithms are like the recipes, and models are the dishes created using those r
 #### Examples of models
 - **linear regression**: a type of supervised learning algorithm used for predicting a continuous output (numeric value), based on 1+ input features. Assumes a linear relationship between input features and output. Tries to fit a straight line to data.
 - **logistic regression**: a type of supervised learning algorithm, used for binary classification tasks. Models probability of an input belonging to one of the classes using the logistic function.
-- **neural networks**: a class of ML learning models consting of interconnected nodes organized in layers (input layer, hidden layers, output layer)
+- **neural networks**: a class of ML learning models consisting of interconnected nodes organized in layers (input layer, hidden layers, output layer)
+
+#### More terms
+- **corpus**: commonly used term for input dataset (often structured)
 
 ### Process
 

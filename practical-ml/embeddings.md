@@ -15,7 +15,9 @@ This is a representation of a single element in the dataset, eg the word "fly".
 
 Generally, individual embeddings are represented as row vectors.
 
-## Tensor (aka. matrix)
+## Tensor
+
+*a tensor is similar to a matrix, except tensors interact with other entities in a system and changes its value when other values change...*
 
 A multidimensional combination of vector representations of multiple elements.
 
@@ -23,22 +25,20 @@ A multidimensional combination of vector representations of multiple elements.
 [1 4 9]
 [4 5 6]
 ```
-These embeddings are the outpot of the process of **learning** embeddings, done by passing raw data into an ML model.
+These embeddings are the output of the process of **learning** embeddings, done by passing raw data into an ML model.
 
 This multidimensional input data gets transformed via compression through algorithms into a lower-dimensional space.
 
 The result is a st of vectors in an **embedding space**.
 
 Multimodal data ---> algorithm --> embedding space
-(word/sentence/image)             
+(word/sentence/image)
 
 ## Embedding Process
 
 - Transforms multimodel input into vectors, tensors, graphs, etc (vectors can be thought of as an array of numbers here)
 - Compresses input info for use in an ML task. This process changes variable feature dimensions into fixed inputs to be passed downstream
 - Creates an **embedding space** specific to the data the embeddings were trained on but can be generalized to other domains/tasks (aka. transfer learning - the ability to switch contexts)
-
-
 
 ### Resources to check out
 - https://openai.com/blog/introducing-text-and-code-embeddings
